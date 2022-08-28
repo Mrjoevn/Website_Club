@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-extra: 'Open Sans', sans-serif;
+    --font-main: 'Dancing Script', sans-serif;
+}
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.app {
+    width: 1200px;
+    height: 100vh;
+    background-color: #ccc;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    align-self: center;
+    width: calc(100% - 32px);
+    height: calc(100% - 64px);
+    background-image: url("https://i0.wp.com/www.fajarmag.com/wp-content/uploads/2019/06/morning-in-hoan-kiem-lake-of-hanoi-spcjayjay.jpg?fit=900%2C600&ssl=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px #888888;
+    position: relative;
+    z-index: 1;
+}
+
+.introduce {
+    position:absolute;
+    right: 135px;
+    top: 50px;
+    z-index: 2;
+    transform: rotate(-8deg);
+}
+
+.introduce--place,
+.introduce--name {
+    font-size: 36px;
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    color: rgb(6, 131, 131);
+    line-height: 40px;
+    font-style: italic;
+    text-shadow: 0 2px #ccc;
+}
+.introduce--name {
+    transform: translateX(-5px);
+}
+
+.introduce--place {
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.recomend-place {
+    width: 400px;
+    height: 100%;
+    background-color: rgba(0 , 0 , 0 ,.35);
+}
+
+.heading {
+    font-size: 24px;
+    text-align: center;
+    padding: 16px;
+    color: #fff;
+    position: relative;
+}
+.heading::after {
+    content: "";
+    height: calc(100% - 32px);
+    display: block;
+    border-left: 4px solid brown;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.place {
+    height: auto;
+    display: flex;
+    padding: 0 16px;
+}
+
+.place--img {
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    flex-basis: 120px;
+}
+.place-info {
+    margin-left: 16px;
+    width: 230px;
+}
+.place--img  > img {
+    width: 120px;
+    height: 120px;
+}
+
+.place--heading {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+.place--rate .icon-active{
+    color: yellow;
+    font-size: 14px;
+}
+
+.main-text {
+    color: yellow;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+.address .text,
+.desc .text {
+    color: #fff;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.place + .place {
+    margin-top: 36px;
+}
+
+.place:hover {
+    background-color: #888;
+    padding: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/* Responsive for mobile */
+@media only screen and (max-width: 46.1875em) {
+    .app {
+        width: 100vw;
+    }
+    .recomend-place {
+        width: 100%;
+    }
+    .introduce {
+        display: none;
+    }
+    .heading::after {
+        left: 25px;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 16px 8px;
+        background-clip: content-box;
+    }
+}
